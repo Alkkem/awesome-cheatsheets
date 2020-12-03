@@ -181,6 +181,7 @@ array=([2]=valC [0]=valA [1]=valB)  # another way
 array=(valA valB valC)              # and another
 
 ${array[i]}                  # displays array's value for this index. If no index is supplied, array element 0 is assumed
+${array[@]}                  # expands to the array with all its elements, i.e. ${array[@]} returns an a list with values (valA, valB, valC). Useful to use in for loop lists.
 ${#array[i]}                 # to find out the length of any element in the array
 ${#array[@]}                 # to find out how many values there are in the array
 
